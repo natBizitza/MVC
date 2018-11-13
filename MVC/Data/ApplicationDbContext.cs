@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MVC.Models;
 
 namespace MVC.Data
 {
@@ -12,5 +13,6 @@ namespace MVC.Data
             : base(options)
         {
         }
+        public DbSet<MVC.Models.Alumno> Alumnos { get; set; }
     }
 }
